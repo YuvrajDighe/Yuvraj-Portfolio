@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Download, Code, Database, Server, Globe, ChevronDown, Menu, X } from 'lucide-react';
 import Logo from '/src/assets/image.jpg';
 import Logo2 from '/src/assets/shared.jpg';
-
+import Logo3 from '/src/assets/Mysore.jpg';
+import Logo4 from '/src/assets/Savitribai.jpg';
+import Logo5 from '/src/assets/Savitribaii.jpg';
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -317,11 +319,15 @@ const Portfolio = () => {
 
             {/* Education Card 1 */}
             <div className="bg-[#152232] p-6 rounded-xl shadow-lg w-[400px] text-center hover:scale-105 transition-transform duration-300">
-              <img
+              {/* <img
                 src="\src\assets\Mysore.jpg"
                 alt="University Logo"
                 className="w-40 h-40 mx-auto rounded-full border-2 border-blue-400 mb-4 object-cover"
-              />
+              /> */}
+
+
+                <img src={Logo3} alt="University Logo" className="w-40 h-40 mx-auto rounded-full border-2 border-blue-400 mb-4 object-cover"/>
+
               <h2 className="text-xl font-semibold text-blue-400 mb-1">
                 Bachelor of Computer Applications - BCA              </h2>
               <p className="text-gray-300 mb-1">University of Mysore</p>
@@ -334,11 +340,13 @@ const Portfolio = () => {
 
             {/* Education Card 2 */}
             <div className="bg-[#152232] p-6 rounded-xl shadow-lg w-[400px] text-center hover:scale-105 transition-transform duration-300">
-              <img
+              {/* <img
                 src="/src\assets\Savitribai.jpg"
                 alt="College Logo"
                 className="w-40 h-40 mx-auto rounded-full border-2 border-green-400 mb-4 object-cover"
-              />
+              /> */}
+
+              <img src={Logo4} alt="College Logo" className="w-40 h-40 mx-auto rounded-full border-2 border-green-400 mb-4 object-cover"/>
               <h3 className="text-xl font-semibold text-green-400 mb-7">
                 Higher Secondary Education - HSC
               </h3>
@@ -352,11 +360,13 @@ const Portfolio = () => {
 
             {/* Education Card 3 */}
             <div className="bg-[#152232] p-6 rounded-xl shadow-lg w-[400px] text-center hover:scale-105 transition-transform duration-300">
-              <img
+              {/* <img
                 src="/src\assets\Savitribaii.jpg"
                 alt="School Logo"
                 className="w-40 h-40 mx-auto rounded-full border-2 border-purple-400 mb-4 object-cover"
-              />
+              /> */}
+
+              <img src={Logo5} alt="School Logo" className="w-40 h-40 mx-auto rounded-full border-2 border-purple-400 mb-4 object-cover"/>
               <h3 className="text-xl font-semibold text-purple-400 mb-7">
                 Secondary School Certification – SSC
               </h3>

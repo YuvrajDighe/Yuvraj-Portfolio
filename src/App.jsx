@@ -134,7 +134,7 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center mt-5 relative overflow-hidden">
+      <section id="home" className="min-h-screen flex items-center justify-center mt-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="mb-10">

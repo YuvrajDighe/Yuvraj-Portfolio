@@ -5,7 +5,36 @@ import Logo2 from '/src/assets/shared.jpg';
 import Logo3 from '/src/assets/Mysore.jpg';
 import Logo4 from '/src/assets/Savitribai.jpg';
 import Logo5 from '/src/assets/Savitribaii.jpg';
+import emailjs from "emailjs-com";
+import { useRef } from 'react';
 const Portfolio = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1w0lt7s",
+        "template_wh4x0z3",
+        form.current,
+        "UoNaOI6Rj5ge737hC"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          e.target.reset(); // Form clear
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message, please try again.");
+        }
+      );
+  }
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -176,7 +205,7 @@ const Portfolio = () => {
           </div>
 
           <div className="flex justify-center space-x-6 mt-8 sm:mt-12">
-            <a href="https://github.com/" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/YuvrajDighe" className="text-gray-400 hover:text-white transition-colors">
               <Github size={24} />
             </a>
             <a href="https://www.linkedin.com/in/yuvraj-dighe-64807728a/" className="text-gray-400 hover:text-white transition-colors">
@@ -425,7 +454,7 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 sm:py-16 lg:py-20">
+      {/* <section id="contact" className="py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">Get In Touch</h2>
 
@@ -486,6 +515,66 @@ const Portfolio = () => {
                   </button>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section id="contact" className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
+            Get In Touch
+          </h2>
+
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Left info section */}
+            <div>
+              <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-blue-400">
+                Let's Work Together
+              </h3>
+              <p className="text-gray-300 mb-8 text-sm sm:text-base">
+                I'm always interested in new opportunities and exciting projects.
+                Feel free to reach out!
+              </p>
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-gray-800 rounded-lg p-4 sm:p-6">
+              <form ref={form} onSubmit={sendEmail} className="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-blue-400 focus:outline-none transition-colors text-sm sm:text-base"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-blue-400 focus:outline-none transition-colors text-sm sm:text-base"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows="5"
+                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-blue-400 focus:outline-none transition-colors resize-none text-sm sm:text-base"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg py-3 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 font-semibold text-sm sm:text-base"
+                >
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>

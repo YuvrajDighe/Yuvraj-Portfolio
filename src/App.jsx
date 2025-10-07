@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Download, Code, Database, Server, Globe, ChevronDown, Menu, X } from 'lucide-react';
+import Logo from '/src/assets/image.jpg';
+import Logo2 from '/src/assets/shared.jpg';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -136,12 +138,15 @@ const Portfolio = () => {
           <div className="mb-10">
             <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1 mb-6">
               <div className="w-full h-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
-                <img
+                {/* <img
                   src="\src\assets\image.jpg"
 
                   alt="YD Logo"
                   className="w-full h-full object-cover"
-                />
+                /> */}
+
+               <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
+
               </div>
             </div>
           </div>
@@ -227,11 +232,14 @@ const Portfolio = () => {
               <div className="text-center">
                 <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
                   <div className="w-full h-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
-                    <img
+                    {/* <img
                       src="/src/assets/shared.jpg"
                       alt="YD Logo"
                       className="w-full h-full object-cover"
-                    />
+                    /> */}
+                  <img src={Logo2} alt="Logo2" className="w-full h-full object-cover"
+ />
+
                   </div>
                 </div>
               </div>

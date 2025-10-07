@@ -98,9 +98,8 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`hover:text-blue-400 transition-colors text-sm xl:text-base ${
-                    activeSection === item.toLowerCase() ? 'text-blue-400' : 'text-gray-300'
-                  }`}
+                  className={`hover:text-blue-400 transition-colors text-sm xl:text-base ${activeSection === item.toLowerCase() ? 'text-blue-400' : 'text-gray-300'
+                    }`}
                 >
                   {item}
                 </button>
@@ -123,9 +122,8 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`block w-full text-left py-2 px-2 rounded hover:bg-gray-800 transition-colors ${
-                    activeSection === item.toLowerCase() ? 'text-blue-400' : 'text-gray-300'
-                  }`}
+                  className={`block w-full text-left py-2 px-2 rounded hover:bg-gray-800 transition-colors ${activeSection === item.toLowerCase() ? 'text-blue-400' : 'text-gray-300'
+                    }`}
                 >
                   {item}
                 </button>
@@ -142,8 +140,8 @@ const Portfolio = () => {
           <div className="mb-8">
             <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1 mb-6">
               <div className="w-full h-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
-              <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
-                </div>
+                <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
+              </div>
             </div>
           </div>
 
@@ -165,8 +163,8 @@ const Portfolio = () => {
             >
               View My Work
             </button>
-             <a
-              href="\public\yuvraj dighe Resume pdf.pdf"
+            <a
+              href="/yuvraj_dighe_resume.pdf"
               download="Yuvraj_Resume.pdf"
             >
               <button className="px-8 py-3 border border-gray-600 rounded-lg hover:border-gray-400 transition-colors flex items-center justify-center gap-2">
@@ -174,6 +172,7 @@ const Portfolio = () => {
                 Download Resume
               </button>
             </a>
+
           </div>
 
           <div className="flex justify-center space-x-6 mt-8 sm:mt-12">
@@ -214,11 +213,11 @@ const Portfolio = () => {
 
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="bg-gray-700 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-blue-400">2+</div>
+                    <div className="text-2xl font-bold text-blue-400">1+</div>
                     <div className="text-gray-300 text-sm sm:text-base">Projects</div>
                   </div>
                   <div className="bg-gray-700 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-purple-400">2+</div>
+                    <div className="text-2xl font-bold text-purple-400">1+</div>
                     <div className="text-gray-300 text-sm sm:text-base">Years Experience</div>
                   </div>
                 </div>
@@ -226,8 +225,8 @@ const Portfolio = () => {
               <div className="text-center order-1 md:order-2">
                 <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
                   <div className="w-full h-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
-                  <img src={Logo2} alt="Logo2" className="w-full h-full object-cover"  />
-                             </div>
+                    <img src={Logo2} alt="Logo2" className="w-full h-full object-cover" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -299,35 +298,36 @@ const Portfolio = () => {
 
           <div className="flex flex-wrap justify-center gap-6">
             {/* Education Card 1 */}
-            <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[330px] lg:w-[380px] text-center hover:scale-105 transition-transform duration-300">
+            <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[300px] lg:w-[350px] text-center hover:scale-105 transition-transform duration-300">
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full border-2 border-blue-400 mb-4 bg-gray-700 flex items-center justify-center">
-           <img src={Logo3} alt="Logo3" className="w-full h-full object-cover"  />
-                         </div>
+                <img src={Logo3} alt="Logo3" className="w-full h-full object-cover" />
+              </div>
               <h2 className="text-lg sm:text-xl font-semibold text-blue-400 mb-1">
                 Bachelor of Computer Applications - BCA
               </h2>
               <p className="text-gray-300 mb-1 text-sm sm:text-base">University of Mysore</p>
               <p className="text-gray-400 text-xs sm:text-sm">2022 - 2025</p>
               <p className="text-gray-300 mb-4 mt-5 text-sm sm:text-base">
-                Completed BCA with a strong foundation in data structures, databases, and web development. 
-                Built multiple academic projects including a Task Management System (React + Node.js), 
+                Completed BCA with a strong foundation in data structures, databases, and web development.
+                Built multiple academic projects including a Task Management System (React + Node.js),
                 Student Result Portal using PHP and MySQL, and a Portfolio Website using React.js and Tailwind CSS.
               </p>
             </div>
 
             {/* Education Card 2 */}
-            <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[350px] lg:w-[400px] text-center hover:scale-105 transition-transform duration-300">
+            <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[350px] lg:w-[400px] text-center 
+                hover:scale-105 transition-transform duration-300">
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full border-2 border-green-400 mb-4 bg-gray-700 flex items-center justify-center">
-           <img src={Logo4} alt="Logo4" className="w-full h-full object-cover"  />
-                         </div>
+                <img src={Logo4} alt="Logo4" className="w-full h-full object-cover" />
+              </div>
               <h3 className="text-lg sm:text-xl font-semibold text-green-400 mb-7">
                 Higher Secondary Education - HSC
               </h3>
               <p className="text-gray-300 mb-1 text-sm sm:text-base">Savitribai Phule Pune University</p>
               <p className="text-gray-400 text-xs sm:text-sm">2021 - 2022</p>
               <p className="text-gray-300 mb-4 mt-5 text-sm sm:text-base">
-                Completed HSC in Commerce stream with core subjects including Accountancy, Economics, 
-                Organization of Commerce, and Secretarial Practice. Also studied Information Technology, 
+                Completed HSC in Commerce stream with core subjects including Accountancy, Economics,
+                Organization of Commerce, and Secretarial Practice. Also studied Information Technology,
                 gaining basic skills in programming, office tools, and computer applications.
               </p>
             </div>
@@ -335,15 +335,15 @@ const Portfolio = () => {
             {/* Education Card 3 */}
             <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[350px] lg:w-[400px] text-center hover:scale-105 transition-transform duration-300">
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full border-2 border-purple-400 mb-4 bg-gray-700 flex items-center justify-center">
-           <img src={Logo5} alt="Logo5" className="w-full h-full object-cover"  />
-                         </div>
+                <img src={Logo5} alt="Logo5" className="w-full h-full object-cover" />
+              </div>
               <h3 className="text-lg sm:text-xl font-semibold text-purple-400 mb-7">
                 Secondary School Certification – SSC
               </h3>
               <p className="text-gray-300 mb-1 text-sm sm:text-base">Savitribai Phule Pune University</p>
               <p className="text-gray-400 text-xs sm:text-sm">2019 - 2020</p>
               <p className="text-gray-300 mb-4 mt-5 text-sm sm:text-base">
-                Completed SSC with subjects like Mathematics, Science, English, and Social Studies. 
+                Completed SSC with subjects like Mathematics, Science, English, and Social Studies.
                 Developed a strong academic base and initial interest in technology and computing.
               </p>
             </div>
@@ -500,7 +500,7 @@ const Portfolio = () => {
               <span className="italic font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Yuvraj</span>
             </h1>
             <p className="mt-3 text-gray-400 leading-relaxed text-sm sm:text-base">
-              I am a Full Stack Developer from Maharashtra, India,
+              I am a Frontend Developer from Maharashtra, India,
               with experience in building modern web applications.
             </p>
           </div>

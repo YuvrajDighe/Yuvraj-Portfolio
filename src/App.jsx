@@ -98,13 +98,13 @@ const Portfolio = () => {
 
   const experiences = [
     {
-      company: "Tech Solutions Pvt Ltd",
+      company: "The Baap Company",
       position: "Frontend Developer",
       period: "2023 - Present",
       description: "Developed responsive web applications using React and modern JavaScript frameworks"
     },
     {
-      company: "Digital Agency",
+      company: "The Baap Company",
       position: "Web Developer Intern",
       period: "2022 - 2023",
       description: "Created dynamic websites and collaborated on various client projects"
@@ -454,72 +454,7 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      {/* <section id="contact" className="py-12 sm:py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">Get In Touch</h2>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-              <div>
-                <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-blue-400">Let's Work Together</h3>
-                <p className="text-gray-300 mb-8 text-sm sm:text-base">
-                  I'm always interested in new opportunities and exciting projects.
-                  Whether you have a project in mind or just want to chat about technology,
-                  feel free to reach out!
-                </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <Mail className="text-blue-400 flex-shrink-0" size={20} />
-                    <span className="text-sm sm:text-base break-all">digheyuvraj2004@email.com</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Phone className="text-green-400 flex-shrink-0" size={20} />
-                    <span className="text-sm sm:text-base">+91 9767192303</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <MapPin className="text-red-400 flex-shrink-0" size={20} />
-                    <span className="text-sm sm:text-base">Sangamner, Maharashtra, India</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-800 rounded-lg p-4 sm:p-6">
-                <form className="space-y-4">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-blue-400 focus:outline-none transition-colors text-sm sm:text-base"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Your Email"
-                      className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-blue-400 focus:outline-none transition-colors text-sm sm:text-base"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Your Message"
-                      rows="5"
-                      className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-blue-400 focus:outline-none transition-colors resize-none text-sm sm:text-base"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg py-3 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 font-semibold text-sm sm:text-base"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
+     
       <section id="contact" className="py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
@@ -532,11 +467,29 @@ const Portfolio = () => {
               <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-blue-400">
                 Let's Work Together
               </h3>
+              <div>
               <p className="text-gray-300 mb-8 text-sm sm:text-base">
                 I'm always interested in new opportunities and exciting projects.
                 Feel free to reach out!
               </p>
             </div>
+
+            
+                 <div className="space-y-4">
+                   <div className="flex items-center gap-4">
+                     <Mail className="text-blue-400" size={24} />
+                     <span>digheyuvraj2004@email.com</span>
+                   </div>
+                   <div className="flex items-center gap-4">
+                     <Phone className="text-green-400" size={24} />
+                     <span>+91 9767192303</span>
+                   </div>
+                   <div className="flex items-center gap-4">
+                     <MapPin className="text-red-400" size={24} />
+                     <span>Sangamner, Maharashtra, India</span>
+                   </div>
+                 </div>
+               </div>
 
             {/* Contact Form */}
             <div className="bg-gray-800 rounded-lg p-4 sm:p-6">

@@ -299,7 +299,7 @@ const Portfolio = () => {
 
           <div className="flex flex-wrap justify-center gap-6">
             {/* Education Card 1 */}
-            <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[350px] lg:w-[400px] text-center hover:scale-105 transition-transform duration-300">
+            <div className="bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg w-full sm:w-[330px] lg:w-[380px] text-center hover:scale-105 transition-transform duration-300">
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full border-2 border-blue-400 mb-4 bg-gray-700 flex items-center justify-center">
            <img src={Logo3} alt="Logo3" className="w-full h-full object-cover"  />
                          </div>
